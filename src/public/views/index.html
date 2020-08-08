@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://localhost:4000/" method="post">
+        <a target="blank" href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?access_type=offline&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcalendar.readonly&response_type=code&client_id=17641922081-vcpkriiru6rifj8r8r8cgpqsngoj6teb.apps.googleusercontent.com&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&flowName=GeneralOAuthFlow" rel="noopener noreferrer" class="button">Sign In</a>
+        <span>Sign in first</span>
+        <label for="token"> paste the token </label>
+        <input type="text" name="token" id="">
+        <input type="submit" value="Get my events">
+    </form>
+    <hr>
+    <form action="http://localhost:4000/events" method="post">
+        <a target="blank" href="/" rel="noopener noreferrer" class="button">Sign In</a>
+        <span>Sign in first</span>
+        <label for="atendee email">Atendee Email</label>
+        <input type="email" name="to" id="">
+        <label for="event title">Event Title</label>
+        <input type="text" name="summary" id="">
+        <label for="event body">Event Body </label>
+        <input type="text" name="description" id="">
+        <input type="submit" value="Send Event Invite">
+    </form>
+</body>
+</html>
